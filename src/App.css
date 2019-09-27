@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  font-size: 16px;
+}
 :root {
   --primaryColor: #af9a7d;
   --mainWhite: #fff;
@@ -93,7 +96,7 @@ h6 {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0.75rem 2rem;
+  padding: 0.55rem 2rem;
   background: var(--offWhite);
   z-index: 1;
 }
