@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import defaultBcg from '../images/room-1.jpeg';
 import { Link } from 'react-router-dom';
 import { RoomContext } from '../context';
-import Hero from '../components/Hero';
 import Banner from '../components/Banner';
 import StyledHero from '../components/StyledHero';
 
@@ -15,9 +14,7 @@ export default class SingleRoom extends Component {
     };
   }
   static contextType = RoomContext;
-  componentDidMount() {
-    // console.log(this.props);
-  }
+  // componentDidMount() {}
   render() {
     const { getRoom } = this.context;
     const room = getRoom(this.state.slug);
