@@ -99,10 +99,13 @@ h6 {
   padding: 0.55rem 2rem;
   background: var(--offWhite);
   z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
 }
 .nav-header {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 .nav-btn {
   background: transparent;
@@ -119,6 +122,7 @@ h6 {
   overflow: hidden;
   transition: var(--mainTransition);
   list-style-type: none;
+  width: 100%;
 }
 .nav-links a {
   display: block;
@@ -142,15 +146,19 @@ h6 {
   .nav-btn {
     display: none;
   }
-  .nav-center {
+  .nav-header {
+    width: 30%;
+  }
+  /* .nav-center {
     max-width: 1170px;
     margin: 0 auto;
     display: flex;
-  }
+  } */
   .nav-links {
     height: auto;
     display: flex;
     margin-left: 4rem;
+    width: 50%;
   }
   .nav-links a {
     margin: 0 1rem;
