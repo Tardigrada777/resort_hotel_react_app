@@ -18,7 +18,6 @@ export default class SingleRoom extends Component {
   render() {
     const { getRoom } = this.context;
     const room = getRoom(this.state.slug);
-    console.log(room);
     if (!room) {
       return (
         <div className="error">
@@ -55,7 +54,7 @@ export default class SingleRoom extends Component {
         <section className="single-room">
           <div className="single-room-images">
             {defaultImg.map((item, index) => {
-              return <img key="index" src={item} alt={name} />;
+              return <img key={index} src={item} alt={name} />;
             })}
           </div>
           <div className="single-room-info">
